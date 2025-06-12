@@ -9,7 +9,7 @@
     @for (item of data; track item.id) {
         <tr>
             @for (column of columns; track column) {
-                <td >{{setData(item[column], column)}}</td>
+                <td >{{item[column]}}</td>
             }
         </tr>
     }
