@@ -6,11 +6,13 @@ import {Directive, ElementRef, HostListener} from '@angular/core';
 export class HoverDirective {
   @HostListener('mouseenter')
   hover() {
+    console.log('hover');
     this.el.nativeElement.classList.add('hover');
   }
 
   @HostListener('mouseleave')
   hoverLeave() {
+    console.log('hover');
     this.el.nativeElement.classList.remove('hover');
   }
   constructor(private el: ElementRef) {
