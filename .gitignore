@@ -23,7 +23,6 @@ chrome-profiler-events*.json
 *.sublime-workspace
 
 # IDE - VSCode
-.vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
@@ -48,3 +47,4 @@ Thumbs.db
 # yalc
 .yalc
 yalc.lock
+config.bat
