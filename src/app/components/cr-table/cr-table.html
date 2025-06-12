@@ -1,0 +1,17 @@
+<h1 appHover>{{name}}</h1>
+
+<table>
+    <tr>
+        @for (col of columns; let i = $index; track col) {
+            <th>{{setHeader(col, i)}}</th>
+        }
+    </tr>
+    @for (item of data; track item.id) {
+        <tr>
+            @for (column of columns; track column) {
+                <td >{{setData(item[column], column)}}</td>
+            }
+        </tr>
+    }
+
+</table>
